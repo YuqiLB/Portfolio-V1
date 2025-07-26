@@ -1,5 +1,11 @@
 import React from 'react'
 
+const navItems = [
+    {name: 'Home', link:'home'},
+    {name: 'About', link: 'about'},
+    {name: 'Contacts', link: 'contacts'},
+    
+];
 const Navbar = () => {
   return (
     <div>Navbar
