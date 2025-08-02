@@ -1,23 +1,42 @@
 import React from 'react'
+import {Link} from "react-router-dom"
+import navImage from '/navImage.png'
+import 'Navbar.css'
 
 const navItems = [
-    {name: 'Home', link:'home'},
+    {name: 'Home', link:''},
     {name: 'About', link: 'about'},
     {name: 'Contacts', link: 'contacts'},
     
 ];
 const Navbar = () => {
   return (
-    <div>Navbar
-        <img src="" alt="" />
-        <ul>
-            <li>Home</li>
-            <li>Contacts</li>
-            <li>About</li>
-        </ul>
-        <button>Get Started</button>
-    </div>
-  )
-}
+    <header className="header">
+      <Link>
+      <img src={navImage} alt = "nav image" className="nav-image"></img>
+      <h3 className="nav-text">Home</h3>
+      </Link>
+      <ul className="nav-links">
+        {navItems.map((item) => (
+          <li key={item.name} className="nav-item">
+            {/* 
+            {item.name === 'Story Archives' ? (
+              <Link to="/archives" className="nav-button">
+                {item.name}
+              </Link>
+            ) : (
+             */}
+              <a href={item.link} className="nav-link">
+                {item.name}
+              </a>
+            
+            
+          </li>
+        ))}
+      </ul>
+
+    </header>
+  );
+};
 
 export default Navbar
