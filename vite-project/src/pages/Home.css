@@ -1,0 +1,17 @@
+h1 {
+    text-align: left;
+    
+
+}
+
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: 'Inter Tight', 'Roboto', Inter, sans-serif;
+  line-height: 1.5;
+}

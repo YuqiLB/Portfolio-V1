@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import navImage from '/navImage.png'
-import 'Navbar.css'
+import './Navbar.css'
 
 const navItems = [
-    {name: 'Home', link:''},
+    //{name: 'Home', link:''},
     {name: 'About', link: 'about'},
     {name: 'Contacts', link: 'contacts'},
     
@@ -19,18 +19,9 @@ const Navbar = () => {
       <ul className="nav-links">
         {navItems.map((item) => (
           <li key={item.name} className="nav-item">
-            {/* 
-            {item.name === 'Story Archives' ? (
-              <Link to="/archives" className="nav-button">
-                {item.name}
-              </Link>
-            ) : (
-             */}
-              <a href={item.link} className="nav-link">
-                {item.name}
-              </a>
-            
-            
+            <a href={item.link} className="nav-link">
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>
