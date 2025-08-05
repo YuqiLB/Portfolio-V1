@@ -1,17 +1,198 @@
-h1 {
-    text-align: left;
-    
-
+:root {
+  --bg-gradient: linear-gradient(135deg,#0f1e3f 0%,#0d203e 60%,#0c1f3d 100%);
+  --panel-bg: #0f1f49;
+  --text-light: #e3eafc;
+  --muted: #9aa7c1;
+  --accent: #7ca982;
+  --radius: 10px;
+  --transition: .25s cubic-bezier(.4,0,.2,1);
+  --shadow: 0 20px 60px -10px rgba(15,31,73,.5);
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 }
 
+* {box-sizing:border-box;}
 
-.info {
+body,html,#root {
+  margin:0;
+  padding:0;
+  background: var(--bg-gradient);
+  color: var(--text-light);
+}
+
+.layout {
   display: flex;
-  flex-direction: row;
-  align-items: right;
-  justify-content: right;
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-  font-family: 'Inter Tight', 'Roboto', Inter, sans-serif;
-  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  background: rgba(15,31,73,0.9);
+  backdrop-filter: blur(8px);
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.brand-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.role {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.tagline {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-width: 220px;
+}
+
+.side-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.side-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 0;
+  color: var(--muted);
+  transition: var(--transition);
+}
+
+.side-link:hover,
+.side-link:focus {
+  color: var(--text-light);
+}
+
+.side-link.active {
+  color: var(--text-light);
+}
+
+.side-link.active::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+/* Social row */
+.social {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  text-decoration: none;
+  font-size: 1.25rem;
+  opacity: .8;
+  transition: var(--transition);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  opacity: 1;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 3rem 4rem;
+  max-width: 1100px;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+.description p {
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+  .brand {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .tagline {
+    display: none;
+  }
+  .side-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+  .content {
+    padding: 2rem 1.5rem;
+  }
 }
