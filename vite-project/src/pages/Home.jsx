@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar.jsx'
 import './Home.css'
 import navImage from '/navImage.png';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const sections = [
   { id: 'about', title: 'About' },
@@ -17,7 +18,7 @@ const Home = () => {
         <div className="brand">
           <img src={navImage} alt="logo" className="brand-img" />
           <div className="brand-text">
-            <h1 className="name">Bond Liu</h1>
+            <h1 className="name">Name</h1>
             <p className="role">Programmer</p>
             <p className="tagline">
               I build web pages sometimes.
@@ -25,7 +26,7 @@ const Home = () => {
           </div>
         </div>
 
-        <nav className="side-nav" aria-label="Primary">
+        <div className="side-nav" aria-label="Primary">
           <ul>
             {sections.map((s) => (
               <li key={s.id}>
@@ -35,13 +36,13 @@ const Home = () => {
               </li>
             ))}
           </ul>
-        </nav>
+        </div>
 
         <div className="social">
-          <a aria-label="GitHub" href="#github" className="social-icon">
+          <a aria-label="GitHub" href="https://github.com/yourusername" className="social-icon">
             🐙
           </a>
-          <a aria-label="LinkedIn" href="#linkedin" className="social-icon">
+          <a aria-label="LinkedIn" href="https://linkedin.com/in/yourprofile" className="social-icon">
             in
           </a>
           <a aria-label="Instagram" href="#insta" className="social-icon">
