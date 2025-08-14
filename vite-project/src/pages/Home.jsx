@@ -14,23 +14,23 @@ const sections = [
 const Home = () => {
   return (
     <div className="layout">
-      <aside className="sidebar">
+      <div className="sidebar">
         <div className="brand">
           <img src={navImage} alt="logo" className="brand-img" />
           <div className="brand-text">
             <h1 className="name">Name</h1>
-            <p className="role">Programmer</p>
+            <p className="role">Programmer, Writer</p>
             <p className="tagline">
               I build web pages sometimes.
             </p>
           </div>
         </div>
 
-        <div className="side-nav" aria-label="Primary">
+        <div className="side-nav" >
           <ul>
             {sections.map((s) => (
               <li key={s.id}>
-                <a href={`#${s.id}`} className="side-link">
+                <a href={`/${s.id}`} className="side-link">
                   {s.title}
                 </a>
               </li>
@@ -52,7 +52,7 @@ const Home = () => {
             🌐
           </a>
         </div>
-      </aside>
+      </div>
 
       <main className="content">
         <section id="about" className="section">
