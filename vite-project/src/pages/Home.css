@@ -30,8 +30,8 @@ body, html, #root {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  position: sticky; 
-  top: 0;
+  position: sticky !important; 
+  top: 0 !important;
   background: var(--panel-bg);
   backdrop-filter: blur(8px);
   border-right: 1px solid rgba(255,255,255,0.05);
@@ -44,6 +44,8 @@ body, html, #root {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  position: sticky;
+  top: 0;
 }
 
 .brand-img {
@@ -52,6 +54,8 @@ body, html, #root {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
 }
 
 .name {
@@ -79,7 +83,8 @@ body, html, #root {
   color: transparent; /* text color for the menu items */
   padding: 0;
   margin: 0;
-  position: sticky;
+  position: sticky !important;
+  top: 0;
 }
 .side-nav ul {
   padding: 0;
@@ -89,6 +94,7 @@ body, html, #root {
   flex-direction: column;
   gap: 1rem;
   background-color: transparent;
+  
 }
 
 .side-nav li{
@@ -97,6 +103,7 @@ body, html, #root {
 
 .side-nav a{
   background-color: inherit;
+  
 }
 
 .side-link {
@@ -108,6 +115,7 @@ body, html, #root {
   padding: 6px 0;
   color: var(--muted);
   transition: color 0.3s;
+  
 }
 
 .side-link:hover,
