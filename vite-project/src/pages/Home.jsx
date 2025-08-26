@@ -15,7 +15,13 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit dicta aliquam ea, neque nobis. Officia necessitatibus repellat earum ipsum expedita. Pariatur nam temporibus tempore quisquam non nulla! Consequatur, sunt.</p>
         </section>
 
-        <section id="experience">Experience content here</section>
+        <section id="experience">Experience content here
+          <div className="experience1">
+            
+          </div>
+        </section>
+        
+        
         <section id="projects">Projects content here</section>
       </div>
     </div>
