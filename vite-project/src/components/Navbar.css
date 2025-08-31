@@ -1,28 +1,33 @@
 :root {
-  --bg-gradient: linear-gradient(300deg,#13264e 0%,#0d203e 60%,#ff0000 100%);
+  --bg-gradient: linear-gradient(300deg,#13264e 0%,#0d203e 60%,#000000 100%);
   --primary-color: #13264e;
   --hover-color: #0a3274;
   --accent-color: #0a5adb;
   --text-light: #e3eafc;
 }
 nav{
-  background-color: var(--primary-color);
+  background-color: #0a1a3d;
   border-bottom: 1px solid var(--hover-color);
 }
 
 nav{
   position: fixed;
   top: 0;
-  left: -100%;
+  /*left: -100%;*/
   height: 100vh;
-  width: min(30em, 100%);
+  width: min(45em,50%);
   z-index: 10;
-  border-left: 1px solid var(--hover-color);
-  border-right: 1px solid var(--hover-color);
   transition:left 300ms ease-in-out;
+  
 }
 nav.show{
   left: 0;
+  width: 100%;
+}
+
+.sidenav{
+  display: flex;
+  justify-content: left;
 }
 
 nav ul{
@@ -30,26 +35,35 @@ nav ul{
   width: 100%;
   flex-direction: column;
   gap: 0.5em;
-  padding: 1em 0;
+  padding: 4em 0;
+  padding-top: 0;
 }
+nav ul button{
+  justify-content: center;
+}
+
 nav button{
   display: flex;
   width: 100%;
   color: var(--text-light);
-  padding: 1em 2em;
-  background-color: var(--primary-color);
+  padding: 1em;
+  background-color: var(--bg-gradient);
   cursor: pointer;
   font-size: 1rem;
   border: none;
-  transition: background-color 150ms ease;
+  transition:  font-size 450ms ease ;
+  padding-right: 4em;
 }
 
 nav button:hover{
-  background-color: var(--hover-color);
+  /*background-color: var(--hover-color);*/
+  color: white; 
+
+  font-size: 1.2em;
 }
 
 #open-sidebar-button{
-  display: block;
+  display: none;
   background:none;
   border: none;
   padding: 1em;
@@ -61,13 +75,69 @@ nav button:hover{
   border: none;
   padding: 1em;
   cursor: pointer;
+  display: none;
+  
 }
 
 nav h1{
   font-size: 4em;
+  color:#7191c6;
+  margin-left: 15%;
 
 }
 nav h2{
   font-size: 2em;
 }
 
+.picture img{
+  max-width: 20em;
+  height: auto;
+  border-radius: 10%;
+  margin-left: 23%;
+  
+}
+
+.name{
+  display: flex;
+  padding-left: 10%;
+  padding-top: 5%;
+  
+}
+nav p{
+  margin-left: 24%;
+  display: flex;
+}
+h3{
+  display: flex;
+  padding-left: 9%;
+  margin-left: 15%;
+  font-weight: 600;
+  padding-top: 0;
+}
+
+
+.icons{
+  display: flex;
+  gap: 1rem;
+  justify-content: left; 
+  padding: 0;
+  margin-left: 8em;
+  list-style: none;
+  flex-direction: row;
+  
+}
+
+
+.icons img {
+  width: 3em;  
+  height: auto;
+  transition:  font-size 450ms ease ;
+}
+
+.icons img:hover{
+  font-size: 1.2em;
+}
+
+.icon {
+  color: white;
+}
