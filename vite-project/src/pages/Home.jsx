@@ -11,36 +11,67 @@ const Home = () => {
       <Navbar/>
       <div className="home-container">
         <section id="about">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ex voluptas, nobis dignissimos optio voluptates perspiciatis distinctio ut et nam fugiat corrupti eaque. Explicabo repudiandae dolores beatae laborum sapiente quam?</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, ut! Fugiat dolore iure esse labore excepturi ab optio mollitia! Totam odit dolores qui numquam. Amet veniam corporis qui id aspernatur?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos excepturi eveniet laudantium deserunt laboriosam a nemo asperiores! Sed veritatis cumque fuga, provident dolorum autem harum excepturi perferendis sequi saepe?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit dicta aliquam ea, neque nobis. Officia necessitatibus repellat earum ipsum expedita. Pariatur nam temporibus tempore quisquam non nulla! Consequatur, sunt.</p>
+          <p>Hello! I'm a Calgary high school developer with a passion for designing clean, usable web experiences.</p>
+          <p>My area of expertise is front-end development, at least for now. I enjoy seeing ideas evolve into interactive projects working with React.</p>
+          <p>I thrive on curiosity and experimentation. I enjoy things from small coding challenges to building full web projects. </p>
+          <p>What I love most is the mix of problem-solving and creativity in development. Between designing a clean interface, adding fun features, or writing insightful documentation, I learn something new from every project.</p>
+          <p>If I'm not coding, you can probably find me playing an instrument (piano, clarinet, saxophone), on the badminton court, or maybe playing a new game. I'm always looking forward to meeting new people, finding new opportunities and create something worthwhile.</p>
+        
         </section>
 
-        <section id="experience">Experience content here
-          
+        <section id="experience">
+          <h4>Experience</h4>
           <div className="robotics">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <h2>Robotics</h2>
-              <p>I did Robotics Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia, labore asperiores magnam maiores et deserunt dolore blanditiis molestiae sequi eius eaque sint quas minima voluptatem voluptatum, excepturi possimus similique?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla fugiat sint consectetur ea delectus, dolor similique et odio officia molestias minima, officiis eveniet itaque dolorem impedit asperiores. Esse, pariatur quae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure maiores soluta facere exercitationem inventore ex nihil repellat autem quod, vitae sit iusto explicabo dolorem nulla. Temporibus sapiente assumenda nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam eum ipsa adipisci voluptatibus! Perspiciatis a earum eligendi eaque quaerat. Dolores dolorum itaque beatae velit maxime. Fugiat mollitia ipsum voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt praesentium voluptatibus, ab dolores architecto ea corrupti, nam at sapiente iure velit? Alias incidunt reprehenderit, libero ratione blanditiis repellendus voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus, alias tempore fugit quasi quis, doloremque obcaecati sunt impedit laborum id beatae, repudiandae commodi vel iure consequatur suscipit officiis perferendis.</p>
+            <a href="https://www.robotevents.com/teams/V5RC/3388S" target="_blank" rel="noopener noreferrer">
+              <h2>VEX Robotics Engineering Notebooker</h2>
+              <h2> (2023–Present)</h2>
+              <p>
+As the notebooker for my VEX Robotics team, I document the full engineering design process — from brainstorming problems to developing solutions . I created and maintained a professional engineering notebook that displays our team's progress and decision-making.
+
+Documented mechanical and programming progress using sketches, diagrams, and detailed analyses through our design process.
+
+Organized entries to align with VEX's judging standards helping to contribute to award submissions
+
+Collaborated with team members to ensure the most accurate and consistent representation of our work</p>
             </a>
           </div>
           <div className="volunteering">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://youthcentral.com/" target="_blank" rel="noopener noreferrer">
               <h2>Volunteering</h2>
-              <p>I did Robotics Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia, labore asperiores magnam maiores et deserunt dolore blanditiis molestiae sequi eius eaque sint quas minima voluptatem voluptatum, excepturi possimus similique?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla fugiat sint consectetur ea delectus, dolor similique et odio officia molestias minima, officiis eveniet itaque dolorem impedit asperiores. Esse, pariatur quae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure maiores soluta facere exercitationem inventore ex nihil repellat autem quod, vitae sit iusto explicabo dolorem nulla. Temporibus sapiente assumenda nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam eum ipsa adipisci voluptatibus! Perspiciatis a earum eligendi eaque quaerat. Dolores dolorum itaque beatae velit maxime. Fugiat mollitia ipsum voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt praesentium voluptatibus, ab dolores architecto ea corrupti, nam at sapiente iure velit? Alias incidunt reprehenderit, libero ratione blanditiis repellendus voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus, alias tempore fugit quasi quis, doloremque obcaecati sunt impedit laborum id beatae, repudiandae commodi vel iure consequatur suscipit officiis perferendis.</p>
+              <p>Through my participation in volunteering, I have been able to combine my interests in community service with teaching as well as technology:
+
+Youth Central - Supporting community initiatives in Calgary, helping to run events and programs which strengthen community connections with youth, elders and everyone in between.
+
+Computer Science Teaching Assistant - Assisted in a high school computer science class by guiding students with my own programming experience
+
+AI Education Futurlign - Volunteered to teach students introductory artificial intelligence concepts, helped in creating and directing activities that made advanced ideas approachable for youth and beginners.</p>
             </a>
           </div>
           <div className="Fmemories">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://foundmemories.org" target="_blank" rel="noopener noreferrer">
               <h2>Found Memories</h2>
-              <p>I did Robotics Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia, labore asperiores magnam maiores et deserunt dolore blanditiis molestiae sequi eius eaque sint quas minima voluptatem voluptatum, excepturi possimus similique?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla fugiat sint consectetur ea delectus, dolor similique et odio officia molestias minima, officiis eveniet itaque dolorem impedit asperiores. Esse, pariatur quae?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure maiores soluta facere exercitationem inventore ex nihil repellat autem quod, vitae sit iusto explicabo dolorem nulla. Temporibus sapiente assumenda nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam eum ipsa adipisci voluptatibus! Perspiciatis a earum eligendi eaque quaerat. Dolores dolorum itaque beatae velit maxime. Fugiat mollitia ipsum voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt praesentium voluptatibus, ab dolores architecto ea corrupti, nam at sapiente iure velit? Alias incidunt reprehenderit, libero ratione blanditiis repellendus voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus, alias tempore fugit quasi quis, doloremque obcaecati sunt impedit laborum id beatae, repudiandae commodi vel iure consequatur suscipit officiis perferendis.</p>
+              <p>Found Memories is a Non-Profit organization.</p>
+              <p>Designed and programmed web page.</p>
             </a>
           </div>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vTOHX49yBnpx00ViTITl25lNwPUmylxJkKNzLIUWZr-3UThlowmqriwu3UDpftKtDaeyI7nTDitLg3_/pub" target="_blank" rel="noopener noreferrer">
+              <h4>Full Resume ❐</h4>
+            </a>
         </section>
         
         
-        <section id="projects">Projects content here
+        <section id="projects">
+          
+          <h4>Projects</h4>
+          <div className="cropper">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <h2>Cropper</h2>
+              <p>
+                Coming Soon!! 
+              </p>
+              <p>Fast, efficient, clean way to crop and edit pictures. Rapidfire!</p>
+            </a>
+          </div>
           
           
         </section>

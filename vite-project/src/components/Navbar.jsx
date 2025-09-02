@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="picture">
           <img src="Portfoliopicplaceholder.jpg" alt="Pictureofme" />
         </div>
-=
+
         <ul>  
           <button onClick={scrollAbout} >About</button>
           <button onClick={scrollExperience}>Experience</button>
@@ -62,7 +62,7 @@ const Navbar = () => {
 
         <ul className="icons">  
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linker">
               <img src="linkedin.svg" alt="linkedin" className="icon" />
             </a>
           </li>

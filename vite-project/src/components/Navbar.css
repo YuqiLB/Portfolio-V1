@@ -136,8 +136,10 @@ h3{
 
 .icons img:hover{
   font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 50%;
 }
-
-.icon {
-  color: white;
+.icons .linker img:hover{
+  border: 2px solid white;
+  border-radius: 22%;
 }

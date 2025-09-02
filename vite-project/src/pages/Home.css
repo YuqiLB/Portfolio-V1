@@ -38,7 +38,17 @@ body.long{
 }
 
 h2 {
+  color: #25aed87f;
+  transition: color 250ms  ease;
+}
+
+section > div:hover h2{
   color: #25aed8;
+}
+
+h4{
+  color: #b0b5ef;
+  font-size: 1.3em;
 }
 section {
   padding: 2em;
@@ -56,12 +66,19 @@ section > div {
 }
 section > div:hover{
   color:#1359c9;
+  border: 2px solid rgb(101, 103, 242);
+  
 }
 /*section:hover{
   font-size: 1.1em;
 }*/
 #open-sidebar-button{
   position: sticky;
+}
+
+section> p:hover{
+  color: #346fce;
+  transition: color 250ms  ease;
 }
 
 @media (width <= 700px) {
