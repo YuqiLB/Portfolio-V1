@@ -62,12 +62,12 @@ const Navbar = () => {
 
         <ul className="icons">  
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linker">
+            <a href="https://www.linkedin.com/in/bond-liu-58826a349/" target="_blank" rel="noopener noreferrer" className="linker">
               <img src="linkedin.svg" alt="linkedin" className="icon" />
             </a>
           </li>
           <li>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/YuqiLB" target="_blank" rel="noopener noreferrer">
               <img src="github.svg" alt="github" />
             </a>
           </li>
