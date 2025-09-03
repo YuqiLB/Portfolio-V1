@@ -54,7 +54,7 @@ const Navbar = () => {
           <img src="Portfoliopicplaceholder.jpg" alt="Pictureofme" />
         </div>
 
-        <ul>  
+        <ul className='scrolls'>  
           <button onClick={scrollAbout} >About</button>
           <button onClick={scrollExperience}>Experience</button>
           <button onClick={scrollProjects}>Projects</button>
