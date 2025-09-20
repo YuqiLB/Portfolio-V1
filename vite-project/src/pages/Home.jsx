@@ -15,7 +15,7 @@ const Home = () => {
           <p>My area of expertise is front-end development, at least for now. I enjoy seeing ideas evolve into interactive projects working with React.</p>
           <p>I thrive on curiosity and experimentation. I enjoy things from small coding challenges to building full web projects. </p>
           <p>What I love most is the mix of problem-solving and creativity in development. Between designing a clean interface, adding fun features, or writing insightful documentation, I learn something new from every project.</p>
-          <p>If I'm not coding, you can probably find me playing an instrument (piano, clarinet, saxophone), on the badminton court, or maybe playing a new game. I'm always looking forward to meeting new people, finding new opportunities and create something worthwhile.</p>
+          <p>If I'm not coding, you can probably find me playing an instrument (piano, clarinet, saxophone), on the badminton court, or maybe playing a new indie game. I'm always looking forward to meeting new people, finding new opportunities and create something worthwhile.</p>
         
         </section>
 
